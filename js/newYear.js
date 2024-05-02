@@ -49,7 +49,7 @@ var newYear = () => {
     // 元宝飘落
     jQuery(document).ready(function ($) {
         $('#newYear').wpSuperSnow({
-            flakes: ['/img/yb1.webp', '/img/yb2.webp', '/img/yb3.webp'],
+            flakes: ['https://pluto-xm.github.io/img/yb1.webp', 'https://pluto-xm.github.io/img/yb2.webp', 'https://pluto-xm.github.io/img/yb3.webp'],
             totalFlakes: '100',
             zIndex: '999999',
             maxSize: '30',
