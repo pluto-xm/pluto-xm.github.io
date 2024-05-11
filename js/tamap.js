@@ -70,7 +70,7 @@ function showWelcome() {
             posdesc = "拾起一片枫叶赠予你";
             break;
         case "中国":
-            pos = ipLoacation.result.ad_info.province + " " + ipLoacation.result.ad_info.city+ " " + ipLoacation.result.ad_info.district;
+            pos = ipLoacation.result.ad_info.province + " " + ipLoacation.result.ad_info.city+ " " + ipLoacation.result.ad_info.district
             ipob = ipLoacation.result.ip.string;
             switch (ipLoacation.result.ad_info.province) {
                 case "北京市":
