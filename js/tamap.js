@@ -41,7 +41,6 @@ function showWelcome() {
 
     let dist = getDistance(120.21299393669231, 30.291163510519347, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里记录你自己的经纬度
 
-    let pos = ipLoacation.result.ad_info.nation;
     let posdesc;
     //根据国家、省份、城市信息自定义欢迎语
     //海外地区不支持省份及城市信息
