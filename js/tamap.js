@@ -71,7 +71,8 @@ function showWelcome() {
             posdesc = "拾起一片枫叶赠予你";
             break;
         case "中国":
-            pos = ipLoacation.result.ad_info.province + " " + ipLoacation.result.ad_info.city;
+            pos = ipLoacation.result.ad_info.province + " " + ipLoacation.result.ad_info.city+ " " + ipLoacation.result.ad_info.district;
+            ipob = ipLoacation.result.object;
             switch (ipLoacation.result.ad_info.province) {
                 case "北京市":
                     pos = "北京市";
@@ -213,5 +214,5 @@ function showWelcome() {
     else timeChange = "夜深了，早点休息，少熬夜";
 
     //自定义文本需要放的位置
-    document.getElementById("welcome-info").innerHTML = `欢迎来自<span>${pos}</span>的小伙伴，${timeChange}<br>你距离Pluto约有<span>${dist}</span>公里，${posdesc}`;
+    document.getElementById("welcome-info").innerHTML = `欢迎来自<span>${pos}</span>的小伙伴，你的IP是<span>${ipob}</span>，${timeChange}<br>你距离Pluto约有<span>${dist}</span>公里，${posdesc}`;
 }
