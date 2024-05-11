@@ -72,7 +72,7 @@ function showWelcome() {
             break;
         case "中国":
             pos = ipLoacation.result.ad_info.province + " " + ipLoacation.result.ad_info.city+ " " + ipLoacation.result.ad_info.district;
-            ipob = ipLoacation.result.object;
+            ipob = ipLoacation.result.ip.string;
             switch (ipLoacation.result.ad_info.province) {
                 case "北京市":
                     pos = "北京市";
