@@ -201,7 +201,7 @@ div#archive {
 #fps {
   position: fixed;
   /* 指定位置 */
-  right: 10px;
+  right: 50%;
   bottom: 10px;
   z-index: 1919810;
 }
