@@ -42,6 +42,7 @@ function showWelcome() {
     let dist = getDistance(120.21299393669231, 30.291163510519347, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里记录你自己的经纬度
 
     let posdesc;
+    ipob = ipLoacation.result.ip.string;
     //根据国家、省份、城市信息自定义欢迎语
     //海外地区不支持省份及城市信息
     switch (ipLoacation.result.ad_info.nation) {
@@ -70,8 +71,7 @@ function showWelcome() {
             posdesc = "拾起一片枫叶赠予你";
             break;
         case "中国":
-            pos = ipLoacation.result.ad_info.province + " " + ipLoacation.result.ad_info.city+ " " + ipLoacation.result.ad_info.district
-            ipob = ipLoacation.result.ip.string;
+            pos = ipLoacation.result.ad_info.province + " " + ipLoacation.result.ad_info.city+ " " + ipLoacation.result.ad_info.district;
             switch (ipLoacation.result.ad_info.province) {
                 case "北京市":
                     pos = "北京市";
